@@ -202,6 +202,7 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.dev_name=rmnet_usb0 \
     persist.debug.coresight.config=stm-events \
+    persist.radio.aosp_usr_pref_sel=true \
     persist.radio.VT_CAM_INTERFACE=2 \
     persist.timed.enable=true \
     persist.vendor.qti.telephony.vt_cam_interface=1 \
