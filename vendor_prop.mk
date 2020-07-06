@@ -140,7 +140,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.demo.hdmirotationlock=false \
     persist.hwc.enable_vds=1 \
     ro.opengles.version=196610 \
-    ro.vendor.display.cabl=2 \
+    ro.vendor.display.cabl=0 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=0 \
     vendor.gralloc.enable_fb_ubwc=1
@@ -174,7 +174,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.enc.disable.pq=true \
     vendor.video.disable.ubwc=1
 
-PRODUCT_SYSTEM_DEFAULT_PROP ERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Misc
