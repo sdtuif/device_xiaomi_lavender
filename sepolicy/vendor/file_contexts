@@ -23,6 +23,9 @@
 # Sensors
 /dev/elliptic(.*)?                              u:object_r:sound_device:s0
 
+# DT2W
+/sys/touchpanel/double_tap                      u:object_r:sysfs_touchpanel:s0
+
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_lavender                     u:object_r:hal_light_default_exec:s0
 
@@ -33,7 +36,6 @@
 /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_0/max_brightness   u:object_r:sysfs_torch:s0
 /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_1/max_brightness   u:object_r:sysfs_torch:s0
 /sys/class/graphics/fb0/measured_fps                         u:object_r:sysfs_fpsinfo:s0
-/sys/kernel/fast_charge/force_fast_charge                    u:object_r:sysfs_fastcharge:s0
 
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1         u:object_r:hal_mlipay_default_exec:s0
@@ -43,6 +45,3 @@
 
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
-
-# Service HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.authsecret@1\.0-service u:object_r:hal_authsecret_default_exec:s0
