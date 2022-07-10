@@ -446,8 +446,8 @@ PRODUCT_PACKAGES += \
 # libstdc++: camera.sdm660
 PRODUCT_PACKAGES += \
     libgui_vendor \
-    libpowermanager \
     libstdc++.vendor \
+    vndk-ext \
     vndk_package
 
 # WiFi
