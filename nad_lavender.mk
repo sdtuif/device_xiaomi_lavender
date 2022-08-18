@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common Corvus stuff.
+# Inherit some common Nusantara stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 # lawnchair
@@ -32,6 +32,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=lavender \
     PRODUCT_NAME=lavender
 
-NAD_BUILD_TYPE := NUBXD
+NAD_BUILD_TYPE := GAMING-EDITION🎮-PRIV
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
