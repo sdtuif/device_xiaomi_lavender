@@ -12,8 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common Nusantara stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common Corvus stuff.
+$(call inherit-product, vendor/Corvus/config/common_full_phone.mk)
 
 # lawnchair
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
@@ -25,7 +25,7 @@ USE_PIXEL_CHARGING := true
 PRODUCT_NAME := du_device
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 7
+PRODUCT_MODEL := M2006J10C
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
