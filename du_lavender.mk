@@ -22,7 +22,7 @@ $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 USE_PIXEL_CHARGING := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nad_lavender
+PRODUCT_NAME := du_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
