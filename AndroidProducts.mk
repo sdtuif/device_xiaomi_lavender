@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_lavender.mk
+    $(LOCAL_DIR)/du_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_lavender-user \
-    nad_lavender-userdebug \
-    nad_lavender-eng
+    du_lavender-user \
+    du_lavender-userdebug \
+    du_lavender-eng
