@@ -334,6 +334,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     KimciRecorder
 
+# Parts
+PRODUCT_PACKAGES += \
+    NusantaraParts
+    
 # QMI
 PRODUCT_PACKAGES += \
     libjson
