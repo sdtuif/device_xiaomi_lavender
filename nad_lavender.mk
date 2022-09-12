@@ -35,6 +35,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=lavender \
     PRODUCT_NAME=lavender
 
-NAD_BUILD_TYPE := Test Build
-
+NAD_BUILD_TYPE := Unofficial
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
