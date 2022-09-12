@@ -19,7 +19,7 @@ $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
 #OPLawncher
-$(call inherit-product-if-exists, vendor/OPLauncher/OPLauncher.mk)
+$(call inherit-product-if-exists, vendor/oplauncher/OPLauncher.mk)
 
 # Charging Animation
 USE_PIXEL_CHARGING := true
