@@ -28,7 +28,7 @@ git clone https://github.com/Sa-Sajjad/vendor_xiaomi_lavender -b hmp vendor/xiao
 
 Vendor oplauncher
 ```bash
-git clone https://github.com/Sa-Sajjad/vendor_OnePlusLauncher -b customized-version vendor/oplauncher
+git clone https://github.com/Sa-Sajjad/vendor_OnePlusLauncher -b 10 vendor/oplauncher
 ```
 
 
