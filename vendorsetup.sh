@@ -1,1 +1,1 @@
-add_lunch_combo du_lavender-userdebug
+add_lunch_combo nad_lavender-userdebug
