@@ -29,6 +29,9 @@
     <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
     <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
     <bool name="config_supportBatteryHealth">true</bool>
+
+    <!-- Nusantara parts -->
+    <bool name="has_nusantara_parts_available">true</bool>
     
     <!-- Nusantara maintainer -->
     <string name="maintainer_name"> _𒆜_🅢_Ö_🅙_Õ_🅛_𒆜_ </string>    
