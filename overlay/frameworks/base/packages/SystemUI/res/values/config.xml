@@ -49,5 +49,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- FPSInfoService Fps file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
-</resources>
+
+    <!-- Max Visible NotificationIcons 9 -->
+    <integer name="config_maxNotificationIcons">9</integer>
+    <integer name="config_maxVisibleNotificationIcons">9</integer>
+
 </resources>
