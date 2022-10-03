@@ -54,4 +54,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <integer name="config_maxNotificationIcons">9</integer>
     <integer name="config_maxVisibleNotificationIcons">9</integer>
 
+    <!-- allow custom qs shape -->
+    <bool name="config_useMaskForQs">false</bool>
 </resources>
