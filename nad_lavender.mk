@@ -15,9 +15,6 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 # Inherit some common Corvus stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
-#OPLawncher
-$(call inherit-product-if-exists, vendor/oplauncher/OPLauncher.mk)
-
 # Charging Animation
 USE_PIXEL_CHARGING := true
 
@@ -27,6 +24,8 @@ PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2006J10C
 PRODUCT_MANUFACTURER := Xiaomi
+NAD_VERSION_BASE := 69
+NAD_BUILD_CODENAME := eLTS
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=lavender \
