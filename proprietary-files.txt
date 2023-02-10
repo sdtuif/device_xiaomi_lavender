@@ -1060,6 +1060,21 @@ vendor/lib64/libwvhidl.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
+# DRM
+vendor/bin/qseecomd
+vendor/lib/libQSEEComAPI.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libqisl.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/librpmb.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libsecureui.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libspl.so
+
 # FM
 lib/libfm-hci.so|68379ed687d49e5d18e703a5281de8f8fc68505c
 lib/fm_helium.so
