@@ -45,7 +45,7 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 
 # Kernel
 TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel_img/zImage
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel_img/zImage-dtb
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
