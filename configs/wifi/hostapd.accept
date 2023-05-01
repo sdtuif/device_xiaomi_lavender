@@ -1,8 +1,3 @@
-<<<<<<< HEAD
 # List of MAC addresses that are allowed to authenticate (IEEE 802.11) with the 
 # AP. Optional VLAN ID can be assigned for clients based on the
-=======
-# List of MAC addresses that are allowed to authenticate (IEEE 802.11)
-# with the AP. Optional VLAN ID can be assigned for clients based on the
->>>>>>> 013ab59 (lavender: wifi configs from LA.UM.8.2.r1-06700-sdm660.0)
 # MAC address if dynamic VLANs (hostapd.conf dynamic_vlan option) are used.
