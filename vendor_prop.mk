@@ -13,6 +13,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.fluence.speaker=true \
     persist.audio.fluence.voicecomm=true \
+    persist.audio.fluence.voicecomm=true \
     persist.vendor.audio.spv3.enable=true \
     persist.vendor.audio.avs.afe_api_version=2 \
     ro.config.vc_call_vol_steps=7 \
