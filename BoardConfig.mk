@@ -16,7 +16,7 @@ BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
 
-TARGET_SCREEN_DENSITY := 420
+TARGET_SCREEN_DENSITY := 403
 
 # Platform
 BOARD_VENDOR := xiaomi
@@ -37,7 +37,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a73
 
 TARGET_USES_64_BIT_BINDER := true
 BUILD_BROKEN_PHONY_TARGETS := true
-BUILD_BROKEN_DUP_RULES := true
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
@@ -45,8 +44,8 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 loop.max_part=16
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 loop.max_part=7
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
@@ -60,12 +59,12 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lavender
 TARGET_KERNEL_CONFIG := lavender-perf_defconfig
 TARGET_KERNEL_NEW_GCC_COMPILE := true
-# TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel_img/Image.gz-dtb
-
+# TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel-img/zImage-dtb
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := lavender
 
 # Audio
