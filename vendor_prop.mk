@@ -13,10 +13,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.fluence.speaker=true \
     persist.audio.fluence.voicecomm=true \
+    persist.audio.fluence.voicecomm=true \
     persist.vendor.audio.spv3.enable=true \
     persist.vendor.audio.avs.afe_api_version=2 \
-    ro.config.vc_call_vol_steps=7 \
-    ro.config.media_vol_steps=25 \
+    ro.config.vc_call_vol_steps=60 \
+    ro.config.media_vol_steps=60 \
+    ro.config.system_vol_steps=60 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.sdk.ssr=false \
     ro.vendor.audio.sos=true \
@@ -42,6 +44,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.spkr_prot.tx.sampling_rate=48000 \
     vendor.audio.volume.headset.gain.depcal=true \
     vendor.voice.path.for.pcm.voip=true
+    
+# ART A11
+# dalvik.vm.boot-dex2oat-cpu-set: CPUs running dex2oat threads during boot time
+# Use both Silver and GOLD cluster for that
+# to build bootimage use only GOLD cluster
+# dalvik.vm.dex2oat-cpu-set CPUs running dex2oat threads after boot time
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.image-dex2oat-cpu-set=4,5,6,7 \
+    dalvik.vm.dex2oat-threads=4
 
 # Audio Feature
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -100,20 +112,62 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.privapp.list=org.codeaurora.snapcam \
-    persist.sys.camera.camera2=true \
-    persist.vendor.camera.privapp.list=org.codeaurora.snapcam \
-    persist.vendor.camera.preview.ubwc=0 \
-    persist.vendor.camera.isp.clock.optmz=0 \
-    persist.vendor.camera.isp.turbo=1 \
-    persist.vendor.camera.imglib.usefdlite=1 \
-    persist.vendor.camera.expose.aux=1 \
-    persist.vendor.camera.HAL3.enabled=1 \
-    persist.vendor.camera.awb.sync=2 \
-    persist.vendor.camera.manufacturer=Xiaomi \
-    persist.vendor.camera.model=Redmi Note 7 \
-    persist.vendor.camera.exif.make=Xiaomi \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam
+	persist.bokeh.switch.lux=290 \
+	persist.camera.auxswitch.threshold=330 \
+	persist.camera.imglib.usefdlite=1 \
+	persist.camera.depth.focus.cb=0 \
+	persist.camera.expose.aux=1 \
+	persist.camera.isp.clock.optmz=0 \
+	persist.camera.isp.turbo=1 \
+	persist.camera.linkpreview=0 \
+	persist.camera.mainswitch.threshold=419 \
+	persist.camera.set.afd=4 \
+	persist.camera.stats.test=0 \
+	persist.flash.low.lux=390 \
+	persist.flash.light.lux=340 \
+	persist.imx376_sunny.low.lux=310 \
+	persist.imx376_sunny.light.lux=280 \
+	persist.imx376_ofilm.low.lux=310 \
+	persist.imx376_ofilm.light.lux=280 \
+	persist.sys.exif.make=Xiaomi \
+	persist.radio.VT_CAM_INTERFACE=2 \
+	ro.eyecare.brightness.threshold=3 \
+	ro.eyecare.brightness.level=8 \
+	ro.hist.brightness.threshold=5 \
+	persist.vendor.camera.multicam.hwsync=TRUE \
+	persist.vendor.camera.multicam.fpsmatch=TRUE \
+	persist.vendor.camera.enableAdvanceFeatures=0x347 \
+	persist.vendor.camera.display.umax=1920x1080 \
+	persist.vendor.camera.display.lmax=1280x720 \
+	vidc.enc.dcvs.extra-buff-count=2 \
+	persist.vendor.camera.eis.enable=0 \
+	persist.camera.eis.enable=0 \
+	persist.vendor.camera.expose.aux=1 \
+	persist.vendor.camera.preview.ubwc=0 \
+	persist.vendor.camera.stats.test=0 \
+	persist.vendor.camera.isp.clock.optmz=0 \
+	persist.vendor.camera.linkpreview=0 \
+	persist.vendor.camera.isp.turbo=1 \
+	persist.vendor.camera.awb.sync=2 \
+	persist.vendor.camera.fdvideo=1 \
+	persist.vendor.camera.mfnrframenum=8 \
+	persist.vendor.camera.multicam=TRUE \
+	persist.vendor.camera.multicam.framesync=1 \
+	persist.vendor.camera.auxswitch.threshold=330 \
+	persist.vendor.camera.mainswitch.threshold=419 \
+	persist.vendor.ov13855_sunny.low.lux=385 \
+	persist.vendor.ov13855_sunny.light.lux=370 \
+	persist.vendor.s5k3l8_ofilm.low.lux=379 \
+	persist.vendor.s5k3l8_ofilm.light.lux=367 \
+	persist.vendor.camera.stats.test=5 \
+	persist.vendor.camera.depth.focus.cb=0 \
+	persist.vendor.camera.imglib.usefdlite=1 \
+	persist.vendor.imx376_sunny.low.lux=290 \
+	persist.vendor.imx376_sunny.light.lux=275 \
+	persist.vendor.imx376_ofilm.low.lux=290 \
+	persist.vendor.imx376_ofilm.light.lux=275 \
+	persist.vendor.bokeh.switch.lux=290 \
+	persist.vendor.camera.exif.make=Xiaomi
 
 # CNE & DPM
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -134,7 +188,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.cabl=0 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=0 \
-    vendor.gralloc.enable_fb_ubwc=1
+    vendor.gralloc.enable_fb_ubwc=1 \
+    debug.sdm.support_writeback=0
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -281,3 +336,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.dha_th_rate=2.3 \
     ro.config.sdha_apps_bg_max=64 \
     ro.config.sdha_apps_bg_min=8
+
+# Dual SIM
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.radio.multisim.config=dsds
+
+# DPI
+PRODUCT_PROPERTY_OVERRIDES += \
+	vendor.display.lcd_density=403
+
+# Paper mode
+PRODUCT_PROPERTY_OVERRIDES += \
+	sys.jdi_nt36672_offset=9 \
+	sys.jdi_nt36672_length=45 \
+	sys.paper_mode_max_level=32 \
+	sys.tianma_nt36672_offset=12 \
+	sys.tianma_nt36672_length=46
