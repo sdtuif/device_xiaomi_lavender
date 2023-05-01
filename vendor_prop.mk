@@ -352,11 +352,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	sys.paper_mode_max_level=32 \
 	sys.tianma_nt36672_offset=12 \
 	sys.tianma_nt36672_length=46
-	
-# UI
-sys.use_fifo_ui=1
-
-# Blur
-ro.launcher.blur.appLaunch=0
-ro.surface_flinger.supports_background_blur=0
-ro.sf.blurs_are_expensive=0
