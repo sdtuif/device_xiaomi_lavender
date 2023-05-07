@@ -34,9 +34,6 @@
     <bool name="has_nusantara_parts_available">true</bool>
     
     <string name="maintainer_name"> Sã Śâjjãd </string>
-    
-    <!-- Disable Battery Health by default -->
-    <bool name="config_supportBatteryHealth">false</bool>
 
     <!-- Disable Ultra Power Saving by default -->
     <bool name="config_supportUltraPowerSaving">false</bool>
